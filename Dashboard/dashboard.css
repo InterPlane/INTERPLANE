@@ -58,16 +58,16 @@ header{
 aside{
     height: 87vh;
     width: 7%;
-    background-color: #A92B2D;
+    background-color: #FA4848;
     display: flex;
     align-items: center;
     transition: 0.2s;
 }
 aside:hover{
-    width: 25%;
+    width: 22%;
     transition: 0.2s;
-    .aside_text{display:flex;
-        font-size: 25px};
+    .aside_text{display:flex};
+    .aside_text{font-size: 25px}
 }
 
 .slide_menu{
@@ -82,7 +82,7 @@ aside:hover{
 .aside_menu{
     width: 90%;
     height: 100px;
-    background-color: #A92B2D;
+    background-color: #FA4848;
     display: flex;
     align-items: center;
 }
@@ -94,22 +94,26 @@ aside:hover{
     display:none;
     color: white;
     font-family: "YALBszUSD-E 0", _fb_, auto;
-
+    font-weight: 530;
 }
 
 
 
 /* miolo */
 .content{
-    border: 1px solid;
-    margin-left: 3%;
-    margin-right: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 65%;
+    background-color: white;
+}
+.content h2{
+    color: #FA4848;
+    font:"Bebas Neue";
+    margin-top: 30px;
 }
 .caixas_meio{
-    border: 1px solid;
     width: 100%;
     height: 80%;
     display: flex;
@@ -121,8 +125,59 @@ aside:hover{
     width: 23%;
     height: 100%;
     background-color: #4ecdc4;
+    position: relative
 }
-.content h2{
-    color: #A92B2D;
-    font:"Bebas Neue";
+.top_image{
+    width:100%;
+    height: 45%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.texto{
+    color: white;
+    width: 100%;
+    height: 45%;
+    position:absolute;
+    top: 38%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 15px;
+    flex: 1 1 50px;
+}
+.titulo{
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px
+}
+.firstline{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.secondline pre{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+.dashbutton{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    border-radius: 25px;
+    border: 3px solid #FA4848;
+    background-color: #FA4848;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    transition: 0.3s
+}
+.dashbutton:hover{
+    background-color: #000e19;
+    color: white;
+    border: 3px solid #FA4848;
+    transition: 0.3s;
 }
