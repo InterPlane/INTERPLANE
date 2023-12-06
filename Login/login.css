@@ -11,14 +11,14 @@ body {
 }
 
 .login {
-    width: 400px;
+    width: 40%;
+    height: 30%;
     padding: 20px;
-    background: linear-gradient(to right, #136B65, #4ECDC4) ;
     border-radius: 5px;
     text-align: center;
     position: relative;
     padding-bottom: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
 .img-container {
@@ -27,7 +27,7 @@ body {
 }
 
 .img {
-    width: 100px;
+    width: 150px;
 }
 
 h1 {
@@ -42,24 +42,30 @@ input[type="password"] {
     margin-bottom: 10px;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #2BB2A8;
     background: transparent;
     color: white;
 }
 
 input[type="email"]::placeholder,
 input[type="password"]::placeholder {
-    color: white;
-}
+    color: white;}
+form{
+    display: flex;
+    flex-direction: column;
 
-button {
-    display: block;
-    width: 100%;
+    align-items: center;
+}
+form button {
+    align-items: center;
+    text-align: center;
+    width: 150px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: rgb(83, 99, 190);
-    border: none;
+    font-weight: bolder;
+    background-color: #FA4848;
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -67,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(56, 66, 128);
+    background-color: #0E867D;
     color: #ffffff;
 }
 
