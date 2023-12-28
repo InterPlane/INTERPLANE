@@ -34,8 +34,7 @@ h1 {
     color: #ffffff;
 }
 
-input[type="email"],
-input[type="password"] {
+.input {
     font-family: 'Poppins', sans-serif;
     width: 80%;
     padding: 16px;
@@ -43,17 +42,20 @@ input[type="password"] {
     border-radius: 0;
     border: none;
     border-bottom: 1px solid #2BB2A8;
+    outline: none;
     background: transparent;
     color: white;
 }
+.input:focus{
+    border: 1px solid #2BB2A8;
+    transition: 0.3s;
+}
 
-input[type="email"]::placeholder,
-input[type="password"]::placeholder {
+.input::placeholder{
     color: white;}
 form{
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 form button {

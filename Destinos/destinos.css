@@ -112,73 +112,7 @@
         font:"Bebas Neue";
         margin-top: 30px;
     }
-    .caixas_meio{
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .ofertas{
-        border-radius: 20px;
-        width: 23%;
-        height: 100%;
-        background-color: #4ecdc4;
-        position: relative
-    }
-    .top_image{
-        width:100%;
-        height: 45%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .texto{
-        color: white;
-        width: 100%;
-        height: 45%;
-        position:absolute;
-        top: 38%;
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        padding-left: 15px;
-        flex: 1 1 50px;
-    }
-    .titulo{
-        font-size: 20px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-bottom: 10px
-    }
-    .firstline{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 15px;
-    }
-    .secondline pre{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 14px;
-    }
-    .dashbutton{
-        width: 80%;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 5%;
-        left: 10%;
-        border-radius: 25px;
-        border: 3px solid #FA4848;
-        background-color: #FA4848;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 20px;
-        transition: 0.3s
-    }
-    .dashbutton:hover{
-        background-color: #000e19;
-        color: white;
-        border: 3px solid #FA4848;
-        transition: 0.3s;
-    }
+
 }
     
     /* Painel de controle */
@@ -286,6 +220,8 @@
 
 .column-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -302,7 +238,10 @@
 }
 
 .country-box {
+    display: flex;
+    flex: 1 1 200px;
     width: 48%;
+    height: 48%;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;

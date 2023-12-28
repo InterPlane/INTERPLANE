@@ -7,6 +7,7 @@
     <title>INTERPLANE - Faça seu Cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
     <link rel="icon" href="..\imagens\icon_tab.png">
+    
 </head>
 <body>
     <div class="container">
@@ -15,17 +16,21 @@
             <div class="titulo">
                 <h2>Cadastro</h2>
             </div>
+            <form id="form">
+                <div class="campos">
+                    <input class="input" placeholder="Nome de usuário..." type="text">
+                    <input class="input" placeholder="E-mail..." type="email" oninput="Email()">
+                    <input class="input menor" placeholder="Senha..." type="password" oninput="Senha()">
+                    <input class="input menor" placeholder="Confirme sua senha..." type="password" oninput="confirmaSenha()">
+                    <input class="input menor" placeholder="UF..." type="text" oninput="validaUF()">
+                    <input class="input menor" placeholder="Cidade..." type="text" oninput="validaCidade()">
+                </div>
+                <button class="botao" type="button" onclick="submit_data()">Criar conta</button>
+            </form>
             
-            <div class="campos">
-                <input class="input" placeholder="Nome de usuário..." type="text">
-                <input class="input" placeholder="E-mail..." type="email">
-                <input class="input_menor" placeholder="Senha..." type="password">
-                <input class="input_menor" placeholder="Confirme sua senha..." type="password">
-                <input class="input_menor" placeholder="UF..." type="text">
-                <input class="input_menor" placeholder="Cidade..." type="text">
-            </div>
-            <button class="botao">Criar conta</button>
+            
         </div>
     </div>
 </body>
+<script src="cadastro.js"></script>
 </html>

@@ -12,23 +12,23 @@
     <header>
         <img src="..\imagens\Logo.png" alt="interplane_logo" id="logo">
         <div class="painel">
-            <button class="topmenu">
+            <button class="topmenu" type="button" onclick="destinos()">
                 Destinos
             </button>
     
-            <button class="topmenu">
+            <button class="topmenu" type="button" onclick="estudar()">
                 Estudar
             </button>
     
-            <button class="topmenu">
+            <button class="topmenu" type="button" onclick="aprenderIdioma()">
                 Aprender Idioma
             </button>
     
-            <button class="topmenu">
+            <button class="topmenu" type="button" onclick="trabalhar()">
                 Trabalhar
             </button>
     
-            <button class="topmenu">
+            <button class="topmenu" type="button" onclick="sobre()">
                 Sobre nós
             </button>
         </div>
@@ -39,17 +39,17 @@
         <!-- Barra Lateral -->
         <aside>
             <div class="slide_menu">
-                <button class="aside_menu">
+                <button class="aside_menu" type="button" onclick="inicial()">
                     <img src="..\imagens\Home.png" alt="home" id="casa">
                     <p class="aside_text">Página inicial</p>
                 </button>
-            
-                <button class="aside_menu">
+        
+                <button class="aside_menu" type="button" onclick="myProfile()">
                     <img src="..\imagens\Login.png" alt="login" id="in">
                     <p class="aside_text">Meu perfil</p>
                 </button>
-            
-                <button class="aside_menu">
+        
+                <button class="aside_menu" type="button" onclick="logout()">
                     <img src="..\imagens\Logout.png" alt="exit" id="out">
                     <p class="aside_text">Sair da conta</p>
                 </button>
@@ -97,4 +97,5 @@
     </div>
     
 </body>
+<script src="..\link_páginas\links.js"></script>
 </html>
