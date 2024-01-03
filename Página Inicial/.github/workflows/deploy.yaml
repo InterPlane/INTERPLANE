@@ -33,5 +33,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./Página Inicial  # Ajuste conforme necessário
         publish_branch: gh-pages  # Este é o padrão para GitHub Pages
+        publish_dir: ./Página Inicial  # Ajuste conforme necessário
